@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+.filter{
+    position: fixed;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding-top: 60px;
+    background: red;
+    min-width: 200px;
+    max-width: 200px;
+    overflow-y: auto;
+}
+.main{
+    padding-left: 210px;
+    width: 100%;
+    padding-top: 70px;
+    background: #fff;
+
+}
+.product-list{
+    padding-left: 0px !important;
+}
+.product-list li{
+ list-style-type: none;
+ display: inline-block !important;
+ margin-right: 10px;
+ box-shadow: 2px 0 9px 0 rgba(0,0,0,.04);
+ margin-bottom: 10px;
+ .card{
+     border: 0px solid transparent !important;
+ }
+}
