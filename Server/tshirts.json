@@ -1,0 +1,10 @@
+{
+    "tshirts":[
+
+        {   "id": 1,
+            "name": "leo grand",
+            "img": "https://snow-commerce.imgix.net/aetv/history/products/the_curse_of_oak_island/apparel/merch//COOI-tShirt-Men-Cotton-Charcoal.jpg?auto=compress&fm=pjpg&q=80&cs=strip&h=700&w=700",
+            "price": 399
+        }
+    ]
+}
