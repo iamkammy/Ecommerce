@@ -1,27 +1,21 @@
-<div class="container login-container">
-  <div class="row">
-    <div class="col-md-6 ads">
-      <h1><span id="fl">Shopify</span></h1>
-    </div>
-    <div class="col-md-6 login-form">
-      <div class="profile-img">
-        <img src="../../../assets/images/user (1).png" alt="profile_img" height="140px" width="140px;">
+<div class="admin-panel">
+<div class="container">
+  
+  <div class="form-holder">
+    <h2 class="text-center pb-4">Admin</h2>
+    <form [formGroup]="login" >
+      <div class="form-group">
+        <input type="text" class="form-control" formControlName="username" id="exampleInputEmail1"  placeholder="Username">
       </div>
-      <h3>Login</h3>
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" name="username" placeholder="Username">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" name="password" placeholder="Password">
-        </div>
-        <div class="form-group">
-          <button type="button" class="btn btn-primary btn-lg btn-block">Let me in</button>
-        </div>
-        <div class="form-group forget-password">
-            <a href="#">Forget Password</a>
-        </div>
-      </form>
-    </div>
+      <div class="form-group">
+        <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1" placeholder="password">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" formControlName="remember" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+      </div>
+      <button type="submit" class="btn w-100 btn-primary">Let me in</button>
+    </form>
   </div>
+</div>
 </div>

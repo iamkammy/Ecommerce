@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
      console.log(this.shirts);
     })
 
+   
     // let heads = new Headers({
     //    'Access-Control-Allow-Origin': '*',
     //    'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
