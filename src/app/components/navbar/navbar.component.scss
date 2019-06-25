@@ -2,6 +2,19 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 444444;
-    background: #ffff;
-    
+    background: #0d5375;
+}
+.navbar-brand{
+    color:#FFC107;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        left: -55%;
+    }
 }
