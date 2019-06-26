@@ -1,0 +1,38 @@
+<div id="parent" class="container-fluid">  
+    <div class="row">
+    <div class="col-md-4 mt-30">
+               <p>Add Product Categories</p>
+<!-- Example select  -->
+            
+            <select  [(ngModel)]="select_category" class="custom-select w-50" id="inputGroupSelect01">
+                    <option value="0">Categories</option>
+                    <option >TShirt</option>
+                    <option >Two</option>
+                    <option >Three</option>
+                  </select> 
+
+        
+<!-- Exampleselect ends -->
+
+
+    </div>
+           <div class="col-md-8">
+               <div class="form-container mt-30">
+                <form [formGroup]="product">
+                    <h4>Add Product</h4>
+                        <div class="form-group">
+                          <input type="email" formControlName="pname" class="form-control" placeholder="Product Name">
+                        </div>
+                        <div class="form-group">
+                                <input type="text" formControlName="purl" class="form-control"  placeholder="Product-Image_URL">
+                        </div>
+                        <div class="form-group">
+                                <input type="text" formControlName="pcost" class="form-control"  placeholder="Product Cost">
+                        </div>
+                        
+                        <button (click)="SubmitProduct()" [disabled]="!product.valid" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
+           </div>
+       </div>
+</div>

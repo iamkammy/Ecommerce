@@ -1,0 +1,27 @@
+
+
+
+<div class="container-fluid">
+    
+    <div class="row">
+        <div class="col-md-2 left-actions mt-58">
+            <div id="admin" class="alert alert-success" role="alert">
+                <h4 class="text-center">Welcome {{admin}} <i class="fa fa-smile-o" ></i></h4> 
+            </div>
+            <div routerLink="add-product" class="add mt-2 bg-info">
+               <span> Add Product </span> 
+            </div>
+            <div class="add bg-warning text-dark">
+                <span> Manage </span> 
+            </div>
+            <div class="add bg-danger">
+                <span> Logout </span> 
+            </div>
+        </div>
+        <div class="col-md-10">
+
+              <router-outlet></router-outlet>        
+            
+        </div>
+    </div>
+</div>

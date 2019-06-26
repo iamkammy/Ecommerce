@@ -16,6 +16,7 @@ const routes: Routes = [
     loadChildren: "../app/admin/admin.module#AdminModule"
   } 
  
+
   
 ];
 
