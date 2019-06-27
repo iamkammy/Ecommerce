@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { type } from 'os';
-import { isString } from 'util';
-
+import { AdminService } from '../../admin.service';
 @Component({
   selector: 'app-add-product',
   templateUrl: './add-product.component.html',
@@ -10,21 +8,28 @@ import { isString } from 'util';
 })
 export class AddProductComponent implements OnInit {
 
-  constructor() { }
+  constructor(private admin:AdminService) { }
   product = new FormGroup({
     pname: new FormControl('', Validators.required),
     purl: new FormControl('', Validators.required),
     pcost: new FormControl('', Validators.required)
   });
 
-private select_category=0;
+private select_category="0";
   ngOnInit() {
+
+  }
+  highlight(prod){
+    //  console.log(prod);
+     prod.focus();
   }
    
-
   SubmitProduct(){
     // how to check type of selected string
-    // pass tarray
+    if (this.select_category == 'tshirts'){
+      this.admin.postproduct(this.select_category, this.product.value);
+    }
+    
   }
 
 

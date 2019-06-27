@@ -6,14 +6,14 @@
 
     <div id="product-list-page" class="main">
         <ul class="product-list">
-          <li  *ngFor="let a of arr">
+          <li  *ngFor="let shirt of shirts">
               <div  class="card" style="width: 18rem;">
                   <div class="img-holder">
-                    <img src={{shirts[0].img}} class="card-img-top" alt="...">
+                    <img src={{shirt.purl}} class="card-img-top" alt="...">
                   </div>
                     <div class="card-body">
-                      <h5 class="card-title">{{shirts[0].name}}</h5>
-                      <p class="text-dark"> Price: <del class="small text-danger">1499</del> <span class="text-success"> {{shirts[0].price}} </span> </p> 
+                      <h5 class="card-title">{{shirt.pname}}</h5>
+                      <p class="text-dark"> Price: <del class="small text-danger">1499</del> <span class="text-success"> {{shirt.pcost}} </span> </p> 
                       <a href="#" class="btn btn-primary">Add Cart</a>
                     </div>
                   </div>

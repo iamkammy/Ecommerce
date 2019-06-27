@@ -4,12 +4,12 @@
                <p>Add Product Categories</p>
 <!-- Example select  -->
             
-            <select  [(ngModel)]="select_category" class="custom-select w-50" id="inputGroupSelect01">
+            <select (change)="highlight(prodname)"  [(ngModel)]="select_category" class="custom-select w-75" id="inputGroupSelect01">
                     <option value="0">Categories</option>
-                    <option >TShirt</option>
-                    <option >Two</option>
-                    <option >Three</option>
-                  </select> 
+                    <option value="tshirts">TShirt</option>
+                    <option value="mobiles">Mobile Phones</option>
+                    <option value = "electronic" >Electronic Devices</option> 
+                  </select> {{select_category}}
 
         
 <!-- Exampleselect ends -->
@@ -21,7 +21,7 @@
                 <form [formGroup]="product">
                     <h4>Add Product</h4>
                         <div class="form-group">
-                          <input type="email" formControlName="pname" class="form-control" placeholder="Product Name">
+                          <input type="text" #prodname formControlName="pname" class="form-control" placeholder="Product Name">
                         </div>
                         <div class="form-group">
                                 <input type="text" formControlName="purl" class="form-control"  placeholder="Product-Image_URL">

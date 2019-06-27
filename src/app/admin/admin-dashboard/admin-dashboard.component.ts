@@ -9,11 +9,15 @@ import { Router } from '@angular/router';
 export class AdminDashboardComponent implements OnInit {
 
   constructor(private router:Router) { }
-admin = "kamran";
+admin = "Admin";
   ngOnInit() {
   }
 
   addProduct(){
     this.router.navigate(['admin/dashboard/add-product'])
+  }
+  logout(){
+    sessionStorage.removeItem('adminAuth_token');
+    this.router.navigate(['admin/login']);
   }
 }

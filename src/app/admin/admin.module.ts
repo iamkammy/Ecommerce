@@ -5,12 +5,14 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AddProductComponent } from './admin-dashboard/add-product/add-product.component';
+import { AuthGuardService } from './auth-guard.service';
 
 const routes:Routes = [
-{ path: "login", component:LoginComponent},
+{ path: "login",  component:LoginComponent},
 {
   path: 'dashboard',
   component:AdminDashboardComponent,
+  canActivate:[AuthGuardService],
  children : [
   {path: 'add-product', component: AddProductComponent},
 
@@ -29,8 +31,10 @@ const routes:Routes = [
   imports: [
     CommonModule,
     FormsModule,
+   
     ReactiveFormsModule,
     RouterModule.forChild(routes),
-  ]
+  ],
+  providers:[]
 })
 export class AdminModule { }

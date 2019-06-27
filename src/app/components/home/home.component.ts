@@ -32,6 +32,6 @@ export class HomeComponent implements OnInit {
    
   }
 
-  arr = [3,4,6,7,4];
+ 
 
 }
