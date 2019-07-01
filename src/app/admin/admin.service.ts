@@ -7,10 +7,11 @@ export class AdminService {
 
   constructor(private http:HttpClient) { }
 
-  private base_URL = "http://localhost:3000/";
-  private admin_url:string =  this.base_URL + "admin-credeentials";
-  private adminURL = this.base_URL + 'admin-credeentials';
-  private tshirtURL = this.base_URL+ 'tshirts';
+  private base_URL = "http://localhost:1111/";
+  
+  private admin_url:string =  this.base_URL + "adminRoute";
+  private adminURL = this.base_URL + 'adminRoute';
+  private tshirtURL = this.base_URL+ 'tshirtRoute';
 
   getAdminCredentials(){
     return  this.http.get(this.admin_url);

@@ -30,16 +30,7 @@
       "pcost": "779",
       "id": 7
     }
-  ],
-  
-
-  "mobilephones":[
-    {
-      "id":1,
-      "pname": "Redmi Note 7 pro",
-      "purl": "",
-      "pcost": 13999
-    }
   ]
+  
   
 }
