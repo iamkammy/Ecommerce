@@ -6,9 +6,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AddProductComponent } from './admin-dashboard/add-product/add-product.component';
 import { AuthGuardService } from './auth-guard.service';
+import { RedirectService } from './redirect.service';
 
 const routes:Routes = [
-{ path: "login",  component:LoginComponent},
+{ path: "login",  component:LoginComponent,canActivate:[RedirectService]},
 {
   path: 'dashboard',
   component:AdminDashboardComponent,
