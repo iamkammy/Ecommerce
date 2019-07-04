@@ -4,12 +4,12 @@ import { HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class TshirtService {
-  private tshirt_url:string = "http://localhost:1111/tshirtRoute";
+  private tshirt_url:string = "http://localhost:1111/tshirt";
   // private deepak_url:string = "http://192.168.1.129/shipgiglive/restapi/register.php";
   constructor(private http: HttpClient) { }
 
 getTshirts(){
-  return  this.http.get(this.tshirt_url);
+ return this.http.get(this.tshirt_url);
 }
 
 // getdeepak(){

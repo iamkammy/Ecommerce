@@ -12,7 +12,11 @@ export class AddProductComponent implements OnInit {
   product = new FormGroup({
     pname: new FormControl('', Validators.required),
     purl: new FormControl('', Validators.required),
-    pcost: new FormControl('', Validators.required)
+    pcost: new FormControl('', Validators.required),
+    poldcost: new FormControl('',Validators.required),
+    prating:new FormControl('',Validators.required),
+    pshortdesc: new FormControl('',Validators.required),
+    pdescription: new FormControl('',Validators.required)
   });
 
 private select_category="0";
@@ -24,11 +28,18 @@ private select_category="0";
      prod.focus();
   }
    
-  SubmitProduct(){
+  SubmitProduct(event:Event){
+      // console.log(event);
+      event.preventDefault();
+      console.log(this.product.value);
     // how to check type of selected string
-    if (this.select_category == 'tshirts'){
+    if (this.select_category == 'tshirt'){
       this.admin.postproduct(this.select_category, this.product.value);
     }
+
+    // if(this.select_category == 'mobiles'){
+    //   this.admin.postproduct(this.select_category, this.product.value);
+    // }
     
   }
 

@@ -9,14 +9,23 @@ import { TshirtService } from 'src/app/services/tshirt.service';
 export class HomeComponent implements OnInit {
 
   constructor( private _tshirt: TshirtService) { }
- shirts:any;
+ shirts = [];
+ 
  
   ngOnInit() {
-   this._tshirt.getTshirts().subscribe((res)=>{
-     this.shirts = res;
-     console.log(this.shirts);
-    })
+  //  this._tshirt.getTshirts().subscribe((res:any)=>{
+  //    this.shirts = res.tshirts;
+  //    console.log(this.shirts);
+  
+  //   })
 
+    this._tshirt.getTshirts().subscribe((data:any)=>{
+      console.log(data);
+      console.log(typeof(data.tshirt));
+      this.shirts = data.tshirt;
+      console.log(typeof(this.shirts));
+      
+    })
    
     // let heads = new Headers({
     //    'Access-Control-Allow-Origin': '*',

@@ -16,15 +16,16 @@ export class LoginComponent implements OnInit {
     // remember: new FormControl('', Validators.required)
   });
   data;
+
   ngOnInit() {
-   this._admin.getAdminCredentials().subscribe((res)=>{
+   this._admin.getAdminCredentials().subscribe((res:any)=>{
      this.data = res;
-     console.log(this.data);
+     
    })
   }
   
 
-  validate(){
+  validate(){ 
     if( this.login.value.username == this.data.name && this.login.value.password == this.data.password){
       console.log("authorised");
       sessionStorage.setItem('adminAuth_token', 'valid');

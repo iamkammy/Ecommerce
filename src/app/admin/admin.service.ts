@@ -9,9 +9,9 @@ export class AdminService {
 
   private base_URL = "http://localhost:1111/";
   
-  private admin_url:string =  this.base_URL + "adminRoute";
-  private adminURL = this.base_URL + 'adminRoute';
-  private tshirtURL = this.base_URL+ 'tshirtRoute';
+  private admin_url:string =  this.base_URL + "admin";
+  private adminURL = this.base_URL + 'admin';
+  private tshirtURL = this.base_URL+ 'tshirt';
 
   getAdminCredentials(){
     return  this.http.get(this.admin_url);

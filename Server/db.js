@@ -1,10 +1,11 @@
-var tshirtRoute = require('./tshirt.json');
-var adminRoute = require('./admin.json');
-
+var tshirt = require('./tshirt.json');
+var admin = require('./admin.json');
+var mobiles = require('./mobiles.json');
 
 module.exports =function() {
     return {
-        tshirtRoute:tshirtRoute,
-        adminRoute : adminRoute
+        tshirt:tshirt,
+        admin : admin,
+        mobiles:mobiles
     }
 }

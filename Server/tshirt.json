@@ -1,36 +1,6 @@
 {
-  "tshirts": [
-    {
-      "id": 1,
-      "pname": "leo grand",
-      "purl": "https://snow-commerce.imgix.net/aetv/history/products/the_curse_of_oak_island/apparel/merch//COOI-tShirt-Men-Cotton-Charcoal.jpg?auto=compress&fm=pjpg&q=80&cs=strip&h=700&w=700",
-      "pcost": 399
-    },
-    {
-      "pname": "Roadster",
-      "purl": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1997244/2017/9/6/11504686918599-Roadster-Men-Grey-Melange-Printed-Round-Neck-T-shirt-701504686918389-1.jpg",
-      "pcost": "419",
-      "id": 4
-    },
-    {
-      "pname": "Moda Rapido",
-      "purl": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2221320/2017/11/23/11511442645053-Moda-Rapido-Men-Black-Solid-Round-Neck-T-shirt-1511511442644939-1.jpg",
-      "pcost": "559",
-      "id": 5
-    },
-    {
-      "pname": "Roadster",
-      "purl": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1301358/2016/11/21/11479716524889-Roadster-Charcoal-Grey-Flock-Print-Sweatshirt-1311479716524565-1.jpg",
-      "pcost": "639",
-      "id": 6
-    },
-    {
-      "pname": "Wrogn",
-      "purl": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1894413/2017/6/20/11497943671766-WROGN-Men-Grey-Melange-Self-Design-Round-Neck-T-shirt-881497943671356-1.jpg",
-      "pcost": "779",
-      "id": 7
-    }
+  "tshirt": [
+    
   ]
-  
   
 }

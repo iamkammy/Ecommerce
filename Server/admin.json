@@ -1,8 +1,6 @@
 {
-    "admin-credeentials":
-     {
+  
     "name": "admin",
     "password": "1234"
-     }
-
+     
 }
