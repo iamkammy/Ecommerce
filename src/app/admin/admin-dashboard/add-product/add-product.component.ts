@@ -23,10 +23,11 @@ private select_category="0";
   ngOnInit() {
 
   }
-  highlight(prod){
-    //  console.log(prod);
-     prod.focus();
-  }
+
+  // highlight(prod){
+  //    console.log(prod);
+  //    prod.focus();
+  // }
    
   SubmitProduct(){
      

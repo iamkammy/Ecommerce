@@ -1,23 +1,23 @@
 <div id="parent" class="container-fluid">  
     <div class="row">
     <div class="col-md-4 mt-30">
-               <p class="alert alert-warning">Select Product Categories</p>
+               <p *ngIf="select_category == 0" class="alert alert-warning">Select Product Category</p>
 <!-- Example select  -->
             
-            <select (change)="highlight(prodname)"  [(ngModel)]="select_category" class="custom-select w-75" id="inputGroupSelect01">
+            <select [(ngModel)]="select_category" class="custom-select w-75" id="inputGroupSelect01">
                     <option value="0">Categories</option>
                     <option value="tshirt">TShirt</option>
                     <option value="mobiles">Mobile Phones</option>
                     <option value = "electronic" >Electronic Devices</option> 
-                  </select> {{select_category}}
+                  </select> 
 
 <!-- Exampleselect ends -->
 
     </div>
-           <div class="col-md-8">
+           <div *ngIf="select_category!=0" class="col-md-8">
                <div class="form-container mt-30">
                 <form  [formGroup]="product" >
-                    <h4>Add Product</h4>
+                    <h4 class="text-success">Add Product of {{select_category}}</h4>
                         <div class="form-group">
                           <input type="text" #prodname formControlName="pname" class="form-control" placeholder="Product Name">
                         </div>
