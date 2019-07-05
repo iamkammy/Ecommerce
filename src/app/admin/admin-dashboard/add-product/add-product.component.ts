@@ -28,10 +28,9 @@ private select_category="0";
      prod.focus();
   }
    
-  SubmitProduct(event:Event){
-      // console.log(event);
-      event.preventDefault();
-      console.log(this.product.value);
+  SubmitProduct(){
+     
+      // console.log(this.product.value);
     // how to check type of selected string
     if (this.select_category == 'tshirt'){
       this.admin.postproduct(this.select_category, this.product.value);

@@ -1,6 +1,15 @@
 {
   "tshirt": [
-    
+    {
+      "id":1,
+      "pname":"Maven",
+      "purl": "https://rukminim1.flixcart.com/image/495/594/jf9zxjk0/t-shirt/n/n/s/s-mens-ss18-hs-drop-tail-navy-stripes-maniac-original-imaf3ruzppfgfegh.jpeg?q=50",
+      "pcost" :399, 
+      "poldcost": 654, 
+     "prating": 3.5,
+     "pshortdesc": "Coming Soon",
+     "pdescription":"It is very good product"
+    }
   ]
   
 }

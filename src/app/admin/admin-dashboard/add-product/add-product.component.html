@@ -16,7 +16,7 @@
     </div>
            <div class="col-md-8">
                <div class="form-container mt-30">
-                <form  [formGroup]="product" (submit)="SubmitProduct($event)" >
+                <form  [formGroup]="product" >
                     <h4>Add Product</h4>
                         <div class="form-group">
                           <input type="text" #prodname formControlName="pname" class="form-control" placeholder="Product Name">
@@ -43,7 +43,7 @@
                      </div>
 
                         
-                        <button (click)="SubmitProduct($event)" [disabled]="!product.valid" type="button" class="btn btn-primary">Submit</button>
+                        <button (click)="SubmitProduct()" [disabled]="!product.valid" type="button" class="btn btn-primary">Submit</button>
                 </form>
                 </div>
            </div>

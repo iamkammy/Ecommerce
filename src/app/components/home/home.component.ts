@@ -21,10 +21,9 @@ export class HomeComponent implements OnInit {
 
     this._tshirt.getTshirts().subscribe((data:any)=>{
       console.log(data);
-      console.log(typeof(data.tshirt));
-      this.shirts = data.tshirt;
+      console.log(typeof(data));
+      this.shirts = data;
       console.log(typeof(this.shirts));
-      
     })
    
     // let heads = new Headers({

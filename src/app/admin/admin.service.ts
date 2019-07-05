@@ -7,10 +7,10 @@ export class AdminService {
 
   constructor(private http:HttpClient) { }
 
-  private base_URL = "http://localhost:1111/";
+  private base_URL = "http://localhost:3000/";
   
-  private admin_url:string =  this.base_URL + "admin";
-  private adminURL = this.base_URL + 'admin';
+  private admin_url:string =  this.base_URL + "adminCredentials";
+  
   private tshirtURL = this.base_URL+ 'tshirt';
 
   getAdminCredentials(){
@@ -19,6 +19,8 @@ export class AdminService {
 
   postproduct(category, product){
    let url = this.base_URL + category;
+   console.log(url);
+  //  console.log(product);
    this.http.post(url,product).subscribe((res)=>{
      console.log(res);
    })

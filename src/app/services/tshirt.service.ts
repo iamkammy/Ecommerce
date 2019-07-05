@@ -4,7 +4,9 @@ import { HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class TshirtService {
-  private tshirt_url:string = "http://localhost:1111/tshirt";
+  private baseUrl = "http://localhost:3000/";
+  private tshirt_url:string =  this.baseUrl + "tshirt";
+
   // private deepak_url:string = "http://192.168.1.129/shipgiglive/restapi/register.php";
   constructor(private http: HttpClient) { }
 

@@ -1,0 +1,40 @@
+{
+  "tshirt": [
+    {
+      "id": 1,
+      "pname": "Maven",
+      "purl": "https://rukminim1.flixcart.com/image/495/594/jf9zxjk0/t-shirt/n/n/s/s-mens-ss18-hs-drop-tail-navy-stripes-maniac-original-imaf3ruzppfgfegh.jpeg?q=50",
+      "pcost": 399,
+      "poldcost": 654,
+      "prating": 3.5,
+      "pshortdesc": "Coming Soon",
+      "pdescription": "It is very good product"
+    },
+    {
+      "pname": "Aelomart",
+      "purl": "https://rukminim1.flixcart.com/image/309/371/jwmfcsw0/t-shirt/p/f/d/xxl-awt1020ol-aelomart-original-imaf7qdtbzggxbpu.jpeg?q=50",
+      "pcost": "449",
+      "poldcost": "1499",
+      "prating": "4.7",
+      "pshortdesc": "Stripend Men Round",
+      "pdescription": "It is amazing product",
+      "id": 2
+    }
+  ],
+  "adminCredentials": {
+    "name": "admin",
+    "password": "1234"
+  },
+  "mobiles": [
+    {
+      "id": 1,
+      "pname": "Realme C2 (Diamond Black, 16 GB)",
+      "purl": "https://rukminim1.flixcart.com/image/832/832/jwpa8i80/mobile/h/n/k/realme-c2-rmx1941-original-imaffnumfyvfzc8y.jpeg?q=70",
+      "pcost": 5999,
+      "poldcost": 8999,
+      "prating": 4.7,
+      "pshortdesc": "Coming Soon",
+      "pdescription": "2 GB RAM , front camera., extra zoom"
+    }
+  ]
+}
