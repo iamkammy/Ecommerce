@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   constructor( private _tshirt: TshirtService) { }
  shirts = [];
- 
+ mobiles:any;
  
   ngOnInit() {
   //  this._tshirt.getTshirts().subscribe((res:any)=>{
@@ -24,6 +24,11 @@ export class HomeComponent implements OnInit {
       console.log(typeof(data));
       this.shirts = data;
       console.log(typeof(this.shirts));
+    })
+
+    this._tshirt.getMobiles().subscribe((data:any)=>{
+      console.log(data);
+      this.mobiles = data;
     })
    
     // let heads = new Headers({

@@ -37,9 +37,9 @@ private select_category="0";
       this.admin.postproduct(this.select_category, this.product.value);
     }
 
-    // if(this.select_category == 'mobiles'){
-    //   this.admin.postproduct(this.select_category, this.product.value);
-    // }
+    if(this.select_category == 'mobiles'){
+      this.admin.postproduct(this.select_category, this.product.value);
+    }
     
   }
 

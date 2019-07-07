@@ -20,13 +20,28 @@
           </li>
         </ul>
            
-      
-
-      
-
-        
-
     </div>
- 
+
+
+
+    <!-- mobiles for -->
+    <div id="product-list-page" class="main">
+      <ul class="product-list">
+        <li  *ngFor="let mobile of mobiles">
+            <div  class="card" style="width: 18rem;">
+                <div class="img-holder">
+                  <img src={{mobile.purl}} class="card-img-top" alt="...">
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">{{mobile.pname}}</h5>
+                    <p class="text-dark"> Price: <del class="small text-danger">1499</del> <span class="text-success"> {{mobile.pcost}} </span> </p> 
+                    <a href="#" class="btn btn-primary">Add Cart</a>
+                  </div>
+                </div>
+        </li>
+      </ul>
+         
+  </div>
+    <!-- ends -->
   
 </div>
