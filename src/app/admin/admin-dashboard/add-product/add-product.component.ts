@@ -35,6 +35,8 @@ private select_category="0";
     // how to check type of selected string
     if (this.select_category == 'tshirt'){
       this.admin.postproduct(this.select_category, this.product.value);
+      this.product.reset();
+      this.select_category="0";
     }
 
     if(this.select_category == 'mobiles'){
