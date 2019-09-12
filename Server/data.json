@@ -19,6 +19,26 @@
       "pshortdesc": "Stripend Men Round",
       "pdescription": "It is amazing product",
       "id": 2
+    },
+    {
+      "pname": "Puma",
+      "purl": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/7034391/2018/8/6/4a251e8e-ef08-4aae-8e53-f235a718cc391533541018398-Puma-Men-Black-Athletics-Tee-Printed-Round-Neck-T-shirt-8081-1.jpg",
+      "pcost": "1499",
+      "poldcost": "2000",
+      "prating": "4.0",
+      "pshortdesc": "Printed Round Neck Tshirt",
+      "pdescription": "It is amazing product , needs to be buyed",
+      "id": 3
+    },
+    {
+      "pname": "John Pride",
+      "purl": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/8/27/f2a3c776-1ec0-44f7-93ae-1312961fc3b01566907449615-1.jpg",
+      "pcost": "1529",
+      "poldcost": "4500",
+      "prating": "5",
+      "pshortdesc": "Stripend Round Neck tshirt",
+      "pdescription": "This is my favourite product.",
+      "id": 4
     }
   ],
   "adminCredentials": {
