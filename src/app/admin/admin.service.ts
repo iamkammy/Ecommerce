@@ -14,7 +14,11 @@ export class AdminService {
   private tshirtURL = this.base_URL+ 'tshirt';
 
   getAdminCredentials(){
+    try{
     return  this.http.get(this.admin_url);
+    }catch(e){
+      console.log(e);
+    }
    }
 
   postproduct(category, product){
