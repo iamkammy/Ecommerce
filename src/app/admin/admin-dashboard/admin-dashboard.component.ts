@@ -17,7 +17,12 @@ admin = "Admin";
     this.router.navigate(['admin/dashboard/add-product'])
   }
   logout(){
-    sessionStorage.removeItem('adminAuth_token');
-    this.router.navigate(['admin/login']);
+    if(sessionStorage.getItem('adminAuth_token')){
+      sessionStorage.removeItem('adminAuth_token');
+      this.router.navigate(['admin/login']);
+    } else{
+      alert('already logout');
+    }
+  
   }
 }
