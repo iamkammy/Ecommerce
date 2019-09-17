@@ -19,21 +19,33 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
    this._admin.getAdminCredentials().subscribe((res:any)=>{
-     this.data = res;
-     
+     if(res){
+      this.data = res;
+     }
+    
+   }, (err)=>{
+     console.log(err.message);
+     alert(err.message);
    })
   }
+
   
 
-  validate(){ 
-    if( this.login.value.username == this.data.name && this.login.value.password == this.data.password){
-      console.log("authorised");
-      sessionStorage.setItem('adminAuth_token', 'valid');
-      this.router.navigate(['admin/dashboard']);
+  validate(){
+        if(this.data){
+          if( this.login.value.username == this.data.name && this.login.value.password == this.data.password){
+            console.log("authorised");
+            sessionStorage.setItem('adminAuth_token', 'valid');
+            this.router.navigate(['admin/dashboard']);
+      
+          } else {
+           alert("Unauthorised person....!!!!!!!");
+          }
+        }
+        else{
+          alert('Server error, connection not established !!!');
+        }
 
-    } else {
-     alert("Unauthorised person....!!!!!!!");
-    }
   }
 
 }
