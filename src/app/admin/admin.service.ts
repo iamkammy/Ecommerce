@@ -17,7 +17,7 @@ export class AdminService {
     try{
     return  this.http.get(this.admin_url);
     }catch(e){
-      console.log(e);
+      console.log(e, "from admin service");
     }
    }
 
