@@ -23,7 +23,8 @@ export class HomeComponent implements OnInit {
       console.log(data);
       console.log(typeof(data));
       this.shirts = data;
-      console.log(typeof(this.shirts));
+      
+      // console.log(typeof(this.shirts));
     })
 
     this._tshirt.getMobiles().subscribe((data:any)=>{

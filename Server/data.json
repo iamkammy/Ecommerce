@@ -8,7 +8,7 @@
       "poldcost": 654,
       "prating": 3.5,
       "pshortdesc": "Coming Soon",
-      "pdescription": "It is very good product"
+      "pdescription": "It is very good product",
     },
     {
       "pname": "Aelomart",
@@ -39,6 +39,16 @@
       "pshortdesc": "Stripend Round Neck tshirt",
       "pdescription": "This is my favourite product.",
       "id": 4
+    },
+    {
+      "pname": "Roadster",
+      "purl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1396023/2018/8/11/f2073a17-5fd5-4050-8822-0e8aff67abca1533964230877-Roadster-Men-Charcoal-Grey--Maroon-Striped-Polo-Collar-T-shi-1.jpg",
+      "pcost": "699",
+      "poldcost": "999",
+      "prating": "4.6",
+      "pshortdesc": "Men Charcoal Grey & Maroon Striped Polo T-shirt",
+      "pdescription": "Charcoal grey, maroon and black striped T-shirt, has a polo collar, long sleeves",
+      "id": 5
     }
   ],
   "adminCredentials": {

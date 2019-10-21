@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Shopify</a>
+    <a class="navbar-brand" href="">{{AppName}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,11 +35,9 @@
            Admin
           </a>
           <div class="dropdown-menu text-white text-center" aria-labelledby="navbarDropdown">
-            <a (click)="adminlogin()"  class="btn btn-success mb-1 d-block mx-auto">Login</a>
-            <a   class="btn btn-warning text-dark d-block mb-1 mx-auto">Dashboard</a>
-            <a  class="btn btn-danger d-block mx-auto">Logout</a>
-            
-            
+            <a (click)="adminlogin()" class="btn btn-info mb-1 d-block mx-auto">SignIn</a>
+            <a class="btn btn-warning text-dark d-block mb-1 mx-auto">Dashboard</a>
+            <a  (click)="adminLogout()" class="btn btn-danger d-block mx-auto">Logout</a>
           </div>
         </li>
       </ul>
